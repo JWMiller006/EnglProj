@@ -1,6 +1,6 @@
 # English Project
 ## About
-This is a project done for my enlgish class during my senior year. The code is downloadable from the bin folder (bin/x64/Release)
+This is a project done for my Enlgish class during my senior year. The code is downloadable from the bin folder (bin/x64/Release)
 
 ## Usage
 ### Dependencies
