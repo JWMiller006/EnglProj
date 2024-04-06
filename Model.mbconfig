@@ -1,0 +1,102 @@
+﻿{
+  "Scenario": "TextClassification",
+  "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": false,
+    "Type": "TabularFile",
+    "FilePath": "D:\\Programs\\Files\\New\\EnglProj\\wikipedia-detox-250-line-data.tsv",
+    "Delimiter": "\t",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "Sentiment",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "SentimentText",
+        "ColumnPurpose": "Text",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "LoggedIn",
+        "ColumnPurpose": "Ignore",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "TextClassificationMulti",
+        "Score": 0.66292083118170075,
+        "RuntimeInSeconds": 5193.043,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2",
+          "e0": {
+            "OutputColumnName": "Sentiment",
+            "InputColumnName": "Sentiment",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e1": {
+            "LabelColumnName": "Sentiment",
+            "Sentence1ColumnName": "SentimentText",
+            "ScoreColumnName": "Score",
+            "OutputColumnName": "PredictedLabel",
+            "BatchSize": 32,
+            "MaxEpochs": 10,
+            "Architecture": "Roberta"
+          },
+          "e2": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "MapValueToKey",
+      "e1": "TextClassificationMulti",
+      "e2": "MapKeyToValue"
+    },
+    "Schema": "e0 * e1 * e2",
+    "MetricName": "MacroAccuracy",
+    "ModelFilePath": "D:\\Programs\\Files\\New\\EnglProj\\Backend\\Model.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 1,
+    "Type": "TextClassficationTrainingOption",
+    "TrainingTime": 2147483647,
+    "LabelColumn": "Sentiment",
+    "TextColumn": "SentimentText",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}
