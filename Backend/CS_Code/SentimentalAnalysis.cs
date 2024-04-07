@@ -56,7 +56,7 @@ namespace EnglProj.Backend.CS_Code
 
             if (Program.Version == DotNetType.net8)
             {
-                fileName = ".net8.0/EnglishProject.exe"; 
+                fileName = "ModelHandler/.net8.0/EnglishProject.exe"; 
             }
             else if (Program.Version == DotNetType.net6)
             {
