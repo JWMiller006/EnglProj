@@ -52,12 +52,22 @@ namespace EnglProj.Backend.CS_Code
             }*/
 
             float outputScore;
+            string fileName = "ModelHandler/EnglishProject.exe"; 
+
+            if (Program.Version == DotNetType.net8)
+            {
+                fileName = ".net8.0/EnglishProject.exe"; 
+            }
+            else if (Program.Version == DotNetType.net6)
+            {
+                fileName = "ModelHandler/EnglishProject.exe"; 
+            }
 
             Process proc = new()
             {
                 StartInfo = new()
                 {
-                    FileName = "ModelHandler/EnglishProject.exe",
+                    FileName = fileName,
                     Arguments = $"run \"{text}\"",
                     RedirectStandardOutput = true,
                     CreateNoWindow = true,

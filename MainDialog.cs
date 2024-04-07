@@ -254,5 +254,17 @@ namespace EnglProj
         {
 
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            // Use .net8
+            Program.Version = DotNetType.net8;
+        }
+
+        private void defaultToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Use .net6
+            Program.Version = DotNetType.net6; 
+        }
     }
 }

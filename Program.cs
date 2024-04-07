@@ -57,5 +57,12 @@ namespace EnglProj
         internal static readonly string QuotesAddition = @"/Backend/Data/Responses.json";
 
         internal static List<Quote> QuoteList = [ ];
+
+        internal static DotNetType Version = DotNetType.net6; 
+    }
+    internal enum DotNetType
+    {
+        net6 = 6, 
+        net8 = 8, 
     }
 }
