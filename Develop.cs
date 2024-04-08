@@ -89,5 +89,16 @@ namespace EnglProj
             }
 
         }
+
+        private void sentimentInput_Scroll_1(object sender, EventArgs e)
+        {
+            this.sentimentInput_Scroll(sender, e); 
+        }
+
+        private void addButton_Click_1(object sender, EventArgs e)
+        {
+            this.addButton_Click(sender, e);
+            this.RefreshControl();
+        }
     }
 }

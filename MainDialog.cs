@@ -201,7 +201,7 @@ namespace EnglProj
             this.inputText.Text += $"{Program.Quote}\n\n";
             if (this.DevelopmentBttn.Enabled)
             {
-                this.outputText.Text += "\nLoaded and finished"; 
+                //this.outputText.Text += "\nLoaded and finished"; 
             }
             this.Clr();
         }
@@ -248,11 +248,6 @@ namespace EnglProj
         {
             Form form = new About();
             form.Show(); 
-        }
-
-        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
