@@ -1,7 +1,7 @@
 # English Project
 ## About
 This is a project done for my Enlgish class during my senior year. The latest untested version is downloadable from the bin folder (bin/x64/Release). 
-The latest tested version is available on the releases page
+The latest tested version is available on the releases page in the Releases.zip folder
 
 ## Usage
 ### Dependencies
