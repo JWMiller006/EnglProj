@@ -1,12 +1,16 @@
 # Installation Instructions
 To install this application follow the following steps 
 
+## System Requirements
+1. At least 700 MB of Hard Drive space
+2. Preferably x64 processor
+
 ## Prerequisites
 1. Be using a Windows device (preferably a x64 processor)
 2. Have .NET Framework 4.8 installed and active on your device (default installed with Windows Update)
-3. Install .NET Core 6.0 Runtime or .NET Core 8.0 Runtime (Install one of the following [.NET 6.0 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) or [.NET 8.0 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0))
+4. Install .NET Core 6.0 Runtime or .NET Core 8.0 Runtime (Install one of the following [.NET 6.0 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) or [.NET 8.0 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0))
    * Follow the instructions to install the *RUNTIME* not the SDK
-4. [OPTIONAL] Install 7zip for file extraction (downloadable [here](https://www.7-zip.org/))
+5. [OPTIONAL] Install 7zip for file extraction (downloadable [here](https://www.7-zip.org/))
 
 ## Main Installation
 1. Download the Release.zip file to your hard drive
