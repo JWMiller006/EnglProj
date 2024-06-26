@@ -197,8 +197,8 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="TorchSharp, Version=0.102.5.0, Culture=neutral, PublicKeyToken=67b0e5e1da516a1c">
-      <HintPath>../packages/TorchSharp.0.102.5/lib/netstandard2.0/TorchSharp.dll</HintPath>
+    <Reference Include="TorchSharp, Version=0.102.6.0, Culture=neutral, PublicKeyToken=67b0e5e1da516a1c">
+      <HintPath>../packages/TorchSharp.0.102.6/lib/netstandard2.0/TorchSharp.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
