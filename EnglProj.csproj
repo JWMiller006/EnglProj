@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages/Microsoft.ML.CpuMath.4.0.0-preview.24522.7/build/netstandard2.0/Microsoft.ML.CpuMath.props" Condition="Exists('packages/Microsoft.ML.CpuMath.4.0.0-preview.24522.7/build/netstandard2.0/Microsoft.ML.CpuMath.props')" />
   <Import Project="packages/Microsoft.ML.4.0.0-preview.24378.1/build/netstandard2.0/Microsoft.ML.props" Condition="Exists('packages/Microsoft.ML.4.0.0-preview.24378.1/build/netstandard2.0/Microsoft.ML.props')" />
   <Import Project="packages/Microsoft.ML.CpuMath.4.0.0-preview.24378.1/build/netstandard2.0/Microsoft.ML.CpuMath.props" Condition="Exists('packages/Microsoft.ML.CpuMath.4.0.0-preview.24378.1/build/netstandard2.0/Microsoft.ML.CpuMath.props')" />
   <Import Project="packages\Microsoft.ML.4.0.0-preview.24162.2\build\netstandard2.0\Microsoft.ML.props" Condition="Exists('packages\Microsoft.ML.4.0.0-preview.24162.2\build\netstandard2.0\Microsoft.ML.props')" />
@@ -108,7 +109,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ML.CpuMath, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
-      <HintPath>packages\Microsoft.ML.CpuMath.4.0.0-preview.24378.1\lib\netstandard2.0\Microsoft.ML.CpuMath.dll</HintPath>
+      <HintPath>packages\Microsoft.ML.CpuMath.4.0.0-preview.24522.7\lib\netstandard2.0\Microsoft.ML.CpuMath.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ML.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
@@ -315,6 +316,7 @@
     <Error Condition="!Exists('packages/Microsoft.ML.CpuMath.4.0.0-preview.24378.1/build/netstandard2.0/Microsoft.ML.CpuMath.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages/Microsoft.ML.CpuMath.4.0.0-preview.24378.1/build/netstandard2.0/Microsoft.ML.CpuMath.props'))" />
     <Error Condition="!Exists('packages/Microsoft.ML.4.0.0-preview.24378.1/build/netstandard2.0/Microsoft.ML.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages/Microsoft.ML.4.0.0-preview.24378.1/build/netstandard2.0/Microsoft.ML.props'))" />
     <Error Condition="!Exists('packages/Microsoft.ML.4.0.0-preview.24378.1/build/netstandard2.0/Microsoft.ML.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages/Microsoft.ML.4.0.0-preview.24378.1/build/netstandard2.0/Microsoft.ML.targets'))" />
+    <Error Condition="!Exists('packages/Microsoft.ML.CpuMath.4.0.0-preview.24522.7/build/netstandard2.0/Microsoft.ML.CpuMath.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages/Microsoft.ML.CpuMath.4.0.0-preview.24522.7/build/netstandard2.0/Microsoft.ML.CpuMath.props'))" />
   </Target>
   <Import Project="packages\Microsoft.ML.4.0.0-preview.24162.2\build\netstandard2.0\Microsoft.ML.targets" Condition="Exists('packages\Microsoft.ML.4.0.0-preview.24162.2\build\netstandard2.0\Microsoft.ML.targets')" />
   <Import Project="packages/Microsoft.ML.4.0.0-preview.24378.1/build/netstandard2.0/Microsoft.ML.targets" Condition="Exists('packages/Microsoft.ML.4.0.0-preview.24378.1/build/netstandard2.0/Microsoft.ML.targets')" />
